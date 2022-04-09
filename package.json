@@ -1,0 +1,26 @@
+{
+  "name": "sistema-mvc-com-nodejs",
+  "version": "1.0.0",
+  "description": "sistema com nodejs usando a estrutura mvc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pkratosp/sistema-mvc-com-nodejs.git"
+  },
+  "author": "pkratosp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pkratosp/sistema-mvc-com-nodejs/issues"
+  },
+  "homepage": "https://github.com/pkratosp/sistema-mvc-com-nodejs#readme",
+  "dependencies": {
+    "consign": "^0.1.6",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.15"
+  }
+}
