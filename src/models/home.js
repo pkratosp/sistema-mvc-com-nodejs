@@ -1,26 +1,26 @@
 //responsável pela leitura, escrita e validação dos dados. Nesta camada são implementadas as regras de negócio
 var fs = require('fs');
 
-function news(){}
+function home(){}
 
-news.prototype.getLastNews = (callback)=>{
+home.prototype.getLastHome = (callback)=>{
     //vai ler o arquivo json
-    fs.readFile('./data/noticias.json','utf8', (err,result)=>{
+    fs.readFile('./data/infoClientes.json','utf8', (err,result)=>{
 
         var data = [];
         
         if(!err){
             var obj = JSON.parse(result);
-
-                if(obj.noticias.length > 4){
+            console.log(obj)
+                if(obj.infoClientes.length > 3){
                     var i = 4;
                 }else{
-                    var i = (obj.noticias.length - 1);
+                    var i = (obj.infoClientes.length - 1);
                 }
 
-            obj.noticias.forEach((noticia)=>{
+            obj.infoClientes.forEach((infoClientes)=>{
                 if(i >= 0){
-                    data[i] = noticia;
+                    data[i] = infoClientes;
                     i--;
                 }
             });
@@ -33,5 +33,5 @@ news.prototype.getLastNews = (callback)=>{
 }
 
 module.exports = ()=>{
-    return news;
+    return home;
 }

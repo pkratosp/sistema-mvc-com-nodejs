@@ -1,0 +1,17 @@
+{
+	"infoClientes": [
+		{
+			"Nome": "Pedro Henrique de Paula Faria",
+			"idade": "17"
+		},
+		{
+		    "Nome": "João da silva",
+			"idade": "20"
+        },
+        {
+		    "Nome": "Larissa",
+			"idade": "20"
+        }
+
+	]
+}
